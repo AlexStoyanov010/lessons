@@ -1,22 +1,28 @@
-const add7 = function(num) {
-  return num + 7;
+ const add7 = (number) => {
+  return number + 7;
 }
 
-
-add7(3); 
-
-
-const multiply = function(num1, num2) {
+const multiply = (num1, num2) => {
   return num1 * num2;
 }
 
-multiply(3, 4);
 
-'example'
-
-'E' + 'xample'
-const capitalize = function(str) {
+const capitalize = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-capitalize("hello");
+
+function lastLetter (string){
+  return string.slice(-1)
+}
+
+
+let startingNum = 6;
+ 
+let result = add7(startingNum)
+
+let result1 = add7(result)
+
+let result2 = multiply(result1, 5)
+
+console.log(result2)
